@@ -7,7 +7,10 @@ import CV from '../../assets/rafey CV.pdf'
 function Hero() {
   const { theme } = useContext(ThemeContext);
   const [text] = useTypewriter({
-    words: ["Hi, I'm Rafey Shaikh"], // yahan aur words bhi add kar sakte ho
+    words: [
+      "I'm Frontend Developer",
+      "I'm Web Developer"
+    ], // yahan aur words bhi add kar sakte ho
     loop: true, // ek hi bar chale
     typeSpeed: 80,
     deleteSpeed: 50,
@@ -30,11 +33,11 @@ function Hero() {
 
       {/* Intro Text */}
       <p className="text-sm uppercase tracking-widest font-semibold">
-        {text}
+        Hi, <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">{text}</span>
         <Cursor />
       </p>
       <h1 className="text-3xl sm:text-5xl font-extrabold mt-2">
-        Frontend Web Developer
+        Rafey Shaikh
       </h1>
 
       <p

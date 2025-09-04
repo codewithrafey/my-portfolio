@@ -99,7 +99,7 @@ function About() {
               <PiBriefcase className="mx-auto text-3xl text-pink-500" />
               <h3 className="text-lg font-semibold">Projects</h3>
               <p className={`text-sm ${theme === 'light' ? 'text-gray-500' : 'text-white'} `}>
-                E-commerce, Weather App, News App
+                E-commerce, Weather App and more.
               </p>
             </div>
           </div>

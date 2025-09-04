@@ -22,10 +22,13 @@ function Skills() {
     <div
     id="skills"
      className="pt-10 pb-20 px-4 sm:px-12 lg:px-24 xl:px-40">
-      {/* Heading */}
-      <div className="text-center mb-10">
-        <h1 className="text-4xl font-bold pb-2">My Skills</h1>
-  <div className="mx-auto w-24 h-1 pt-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
+      {/* Section Header */}
+      <div className="text-center space-y-2 py-6">
+        <p className="text-sm uppercase tracking-widest font-medium text-gray-500">
+          what i know
+        </p>
+        <h1 className="text-4xl font-bold">My Skills</h1>
+        <div className="mx-auto w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
       </div>
 
       {/* Skills Grid */}

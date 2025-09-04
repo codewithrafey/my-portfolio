@@ -52,7 +52,7 @@ function Work() {
             code: "https://github.com/codewithrafey/spotify-clone",
 
       desc: "A functional Spotify clone with playlist UI and music player features.",
-      tools: ["React", "Tailwind CSS"],
+      tools: ["HTML", "CSS", "JavaScript"],
     },
     {
       image: weather,
