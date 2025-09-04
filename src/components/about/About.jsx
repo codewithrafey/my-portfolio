@@ -79,7 +79,7 @@ function About() {
 
             {/* Education */}
             <div
-              className={`py-6 px-5 space-y-3 text-center border rounded-xl shadow-sm transition-all duration-300 transform hover:-translate-y-1 cursor-pointer ${
+              className={`py-6 px-5 space-y-3 text-center border rounded-xl shadow-sm transition-all duration-300 transform hover:-translate-y-1  ${
                 theme === "light" ? "border-gray-200" : "border-gray-700 bg-gray-900"
               }`}
             >
