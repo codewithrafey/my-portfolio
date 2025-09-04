@@ -36,7 +36,7 @@ function Hero() {
         Hi, <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">{text}</span>
         <Cursor />
       </p>
-      <h1 className="text-3xl sm:text-5xl font-extrabold mt-2">
+      <h1 className="text-4xl sm:text-5xl font-extrabold mt-2">
         Rafey Shaikh
       </h1>
 

@@ -7,38 +7,45 @@ import { PiBriefcase } from "react-icons/pi";
 import vscode from "../../assets/vscode.png";
 import git from "../../assets/git.png";
 import github from "../../assets/github.png";
-import githubdark from "../../assets/github-dark.png";
 import reactLogo from "../../assets/react.png";
 import tailwind from "../../assets/tailwindcss.png";
 import figma from "../../assets/figma.png";
+import { FaGithub } from "react-icons/fa";
 
 function About() {
   const { theme } = useContext(ThemeContext);
+
   const tools = [
-    { name: "VS Code", logo: vscode },
-    { name: "Git", logo: git },
-    { name: "GitHub", logo: theme === 'light' ? github : githubdark },
-    { name: "React", logo: reactLogo },
-    { name: "Tailwind CSS", logo: tailwind },
-    { name: "figma", logo: figma },
+    { name: "VS Code", logo: <img src={vscode} alt="VS Code" className="w-full h-full" /> },
+    { name: "Git", logo: <img src={git} alt="Git" className="w-full h-full" /> },
+    { 
+      name: "GitHub", 
+      logo: theme === "light"
+        ? <img src={github} alt="GitHub" className="w-full h-full" />
+        : <FaGithub className="text-white mt-[2px] text-2xl" />
+    },
+    { name: "React", logo: <img src={reactLogo} alt="React" className="w-full h-full" /> },
+    { name: "Tailwind CSS", logo: <img src={tailwind} alt="Tailwind" className="w-full h-full" /> },
+    { name: "Figma", logo: <img src={figma} alt="Figma" className="w-full h-full" /> },
   ];
+
   return (
     <div
-    id="about"
+      id="about"
       className={`px-4 sm:px-12 lg:px-24 xl:px-40 pb-16 flex flex-col justify-center items-center gap-8 `}
     >
-{/* Heading */}
-<div className="text-center w-full space-y-2 pb-6">
-  <p className="text-sm uppercase tracking-widest font-medium text-gray-500">
-    Introduction
-  </p>
-  <h1 className="text-4xl font-bold">About Me</h1>
-  <div className="mx-auto w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
-</div>
+      {/* Heading */}
+      <div className="text-center w-full space-y-2 pb-6">
+        <p className="text-sm uppercase tracking-widest font-medium text-gray-500">
+          Introduction
+        </p>
+        <h1 className="text-4xl font-bold">About Me</h1>
+        <div className="mx-auto w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-4 sm:gap-12">
         {/* Profile Image */}
-        <div className="w-80  max-sm:w-full rounded overflow-hidden shadow-lg">
+        <div className="w-80 max-sm:w-full rounded overflow-hidden shadow-lg">
           <img
             src={image}
             className="object-cover w-full h-full rounded"
@@ -46,10 +53,10 @@ function About() {
           />
         </div>
 
-        <div className="  w-full">
+        <div className="w-full">
           {/* Intro Text */}
           <p
-            className={`text-md w-full  max-w-3xl leading-relaxed ${
+            className={`text-md w-full max-w-3xl leading-relaxed ${
               theme === "light" ? "text-gray-600" : "text-gray-200"
             }`}
           >
@@ -66,59 +73,57 @@ function About() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full max-w-4xl mt-6">
             {/* Languages */}
             <div
-              className={`py-6 px-5 space-y-3 text-center border rounded-xl shadow-sm transition-all duration-300 transform hover:-translate-y-1  ${
+              className={`py-6 px-5 space-y-3 text-center border rounded-xl shadow-sm transition-all duration-300 transform hover:-translate-y-1 ${
                 theme === "light" ? "border-gray-200" : "border-gray-700 bg-gray-900"
               }`}
             >
               <GrCode className="mx-auto text-3xl text-indigo-500" />
               <h3 className="text-lg font-semibold">Languages</h3>
-              <p className={`text-sm ${theme === 'light' ? 'text-gray-500' : 'text-white'} `}>
+              <p className={`text-sm ${theme === "light" ? "text-gray-500" : "text-white"} `}>
                 HTML, CSS, JavaScript, React JS
               </p>
             </div>
 
             {/* Education */}
             <div
-              className={`py-6 px-5 space-y-3 text-center border rounded-xl shadow-sm transition-all duration-300 transform hover:-translate-y-1  ${
+              className={`py-6 px-5 space-y-3 text-center border rounded-xl shadow-sm transition-all duration-300 transform hover:-translate-y-1 ${
                 theme === "light" ? "border-gray-200" : "border-gray-700 bg-gray-900"
               }`}
             >
               <RiGraduationCapLine className="mx-auto text-3xl text-green-500" />
               <h3 className="text-lg font-semibold">Education</h3>
-              <p className={`text-sm ${theme === 'light' ? 'text-gray-500' : 'text-white'} `}>
+              <p className={`text-sm ${theme === "light" ? "text-gray-500" : "text-white"} `}>
                 BS Computer Science (Ongoing)
               </p>
             </div>
 
             {/* Projects */}
             <div
-              className={`py-6 px-5 space-y-3 text-center border rounded-xl shadow-sm transition-all duration-300 transform hover:-translate-y-1  ${
+              className={`py-6 px-5 space-y-3 text-center border rounded-xl shadow-sm transition-all duration-300 transform hover:-translate-y-1 ${
                 theme === "light" ? "border-gray-200" : "border-gray-700 bg-gray-900"
               }`}
             >
               <PiBriefcase className="mx-auto text-3xl text-pink-500" />
               <h3 className="text-lg font-semibold">Projects</h3>
-              <p className={`text-sm ${theme === 'light' ? 'text-gray-500' : 'text-white'} `}>
+              <p className={`text-sm ${theme === "light" ? "text-gray-500" : "text-white"} `}>
                 E-commerce, Weather App and more.
               </p>
             </div>
           </div>
+
+          {/* Tools */}
           <div className="mt-6 max-w-4xl w-full">
             <p className="text-sm font-semibold">Tools I use:</p>
-            <div className="flex flex-wrap  gap-6 mt-6">
+            <div className="flex flex-wrap gap-6 mt-6">
               {tools.map((tool, index) => (
                 <div
                   key={index}
-                  className={`flex flex-col gap-2 p-2 rounded-xl shadow-md border transition-all duration-300 transform hover:-translate-y-1  ${
+                  className={`flex flex-col gap-2 p-2 rounded-xl shadow-md border transition-all duration-300 transform hover:-translate-y-1 ${
                     theme === "light" ? "border-gray-300" : "border-gray-700"
                   }`}
                 >
-                  <div className="w-7 overflow-hidden">
-                    <img
-                      src={tool.logo}
-                      alt={tool.name}
-                      className="w-full h-full "
-                    />
+                  <div className="w-7 flex justify-center items-center overflow-hidden">
+                    {tool.logo}
                   </div>
                 </div>
               ))}
