@@ -108,7 +108,7 @@ function Footer() {
           </h3>
           <ul className="mt-3 space-y-3">
             <li className="flex items-center gap-2">
-              <MdEmail className="text-blue-500" /> rafeyshaikh@gmail.com
+              <MdEmail className="text-blue-500" /> rafeyshaikh57@gmail.com
             </li>
             <li className="flex items-center gap-2">
               <FaPhoneAlt className="text-blue-500" /> +92 312 0281155
