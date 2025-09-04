@@ -20,7 +20,7 @@ function Navbar() {
         {"<Rafey/>"}
       </h2>
       <ul
-        className={`flex gap-5 sm:gap-8 max-sm:fixed max-sm:flex-col text-sm font-medium ${
+        className={`flex gap-5 sm:gap-8 max-sm:fixed max-sm:flex-col text-md sm:text-sm font-medium ${
           theme === "light"
             ? "max-sm:bg-white text-gray-600"
             : "max-sm:bg-black max-sm:text-white"
