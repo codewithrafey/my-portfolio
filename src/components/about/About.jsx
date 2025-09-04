@@ -66,7 +66,7 @@ function About() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full max-w-4xl mt-6">
             {/* Languages */}
             <div
-              className={`py-6 px-5 space-y-3 text-center border rounded-xl shadow-sm transition-all duration-300 transform hover:-translate-y-1 cursor-pointer ${
+              className={`py-6 px-5 space-y-3 text-center border rounded-xl shadow-sm transition-all duration-300 transform hover:-translate-y-1  ${
                 theme === "light" ? "border-gray-200" : "border-gray-700 bg-gray-900"
               }`}
             >
@@ -92,7 +92,7 @@ function About() {
 
             {/* Projects */}
             <div
-              className={`py-6 px-5 space-y-3 text-center border rounded-xl shadow-sm transition-all duration-300 transform hover:-translate-y-1 cursor-pointer ${
+              className={`py-6 px-5 space-y-3 text-center border rounded-xl shadow-sm transition-all duration-300 transform hover:-translate-y-1  ${
                 theme === "light" ? "border-gray-200" : "border-gray-700 bg-gray-900"
               }`}
             >
@@ -104,12 +104,12 @@ function About() {
             </div>
           </div>
           <div className="mt-6 max-w-4xl w-full">
-            <p className="text-sm font-semibold">Tools I use</p>
+            <p className="text-sm font-semibold">Tools I use:</p>
             <div className="flex flex-wrap  gap-6 mt-6">
               {tools.map((tool, index) => (
                 <div
                   key={index}
-                  className={`flex flex-col gap-2 p-2 rounded-xl shadow-md border transition-all duration-300 transform hover:-translate-y-1 cursor-pointer ${
+                  className={`flex flex-col gap-2 p-2 rounded-xl shadow-md border transition-all duration-300 transform hover:-translate-y-1  ${
                     theme === "light" ? "border-gray-300" : "border-gray-700"
                   }`}
                 >
