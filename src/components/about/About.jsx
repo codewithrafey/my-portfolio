@@ -28,7 +28,7 @@ function About() {
       className={`px-4 sm:px-12 lg:px-24 xl:px-40 pb-16 flex flex-col justify-center items-center gap-8 `}
     >
 {/* Heading */}
-<div className="sm:text-center w-full space-y-2 pb-6">
+<div className="text-center w-full space-y-2 pb-6">
   <p className="text-sm uppercase tracking-widest font-medium text-gray-500">
     Introduction
   </p>

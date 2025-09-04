@@ -16,7 +16,7 @@ function Hero() {
 
   return (
     <div
-      className={`px-6 sm:px-12 lg:px-24 xl:px-40 py-28 flex flex-col justify-center items-center text-center relative overflow-hidden ${
+      className={`px-6 sm:px-12 lg:px-24 xl:px-40 py-28 max-sm:min-h-screen flex flex-col justify-center items-center text-center relative overflow-hidden ${
         theme === "light"
           ? "bg-white text-black"
           : "bg-gradient-to-b from-black via-gray-900 to-black text-white"

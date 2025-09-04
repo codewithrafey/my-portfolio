@@ -51,7 +51,7 @@ function Contact() {
 
       <div className={`max-w-4xl rounded-3xl  overflow-hidden shadow-xl`}>
         <div className="grid grid-col-1 sm:grid-cols-2">
-          <div className={`p-12 space-y-6  ${theme === 'light' ? 'bg-gray-100' : 'bg-gray-900'}`}>
+          <div className={`p-4 sm:p-12 space-y-6  ${theme === 'light' ? 'bg-gray-100' : 'bg-gray-900'}`}>
             <h1 className="text-2xl font-bold">Contact Information</h1>
             <p
               className={` ${
@@ -83,10 +83,10 @@ function Contact() {
               <RiMapPinLine className="text-blue-600 text-2xl"/>Karachi, Pakistan
             </div>
           </div>
-          <div className="p-12">
+          <div className="p-4 sm:p-12">
             <form
               onSubmit={onSubmit}
-              className={`flex flex-col gap-3 max-w-2xl mx-auto w-full`}
+              className={`flex flex-col gap-3  mx-auto w-full`}
             >
               <div className="">
                 <div
