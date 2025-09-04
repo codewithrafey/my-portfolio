@@ -67,7 +67,7 @@ function About() {
             {/* Languages */}
             <div
               className={`py-6 px-5 space-y-3 text-center border rounded-xl shadow-sm transition-all duration-300 transform hover:-translate-y-1 cursor-pointer ${
-                theme === "light" ? "border-gray-300" : "border-gray-700 bg-gray-900"
+                theme === "light" ? "border-gray-200" : "border-gray-700 bg-gray-900"
               }`}
             >
               <GrCode className="mx-auto text-3xl text-indigo-500" />
@@ -93,7 +93,7 @@ function About() {
             {/* Projects */}
             <div
               className={`py-6 px-5 space-y-3 text-center border rounded-xl shadow-sm transition-all duration-300 transform hover:-translate-y-1 cursor-pointer ${
-                theme === "light" ? "border-gray-300" : "border-gray-700 bg-gray-900"
+                theme === "light" ? "border-gray-200" : "border-gray-700 bg-gray-900"
               }`}
             >
               <PiBriefcase className="mx-auto text-3xl text-pink-500" />

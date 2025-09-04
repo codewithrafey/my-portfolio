@@ -11,7 +11,7 @@ function Footer() {
   return (
     <footer
       className={`px-4 sm:px-12 lg:px-24 xl:px-40 ${
-        isLight ? "bg-gray-100 text-gray-700" : "bg-gray-950 text-gray-300"
+        isLight ? "bg-gray-100 text-gray-700" : "bg-gray-900 text-gray-300"
       }`}
     >
       {/* Divider (Top Line) */}

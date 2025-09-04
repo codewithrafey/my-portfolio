@@ -13,7 +13,7 @@ function Navbar() {
       className={`sticky top-0 z-40 backdrop-blur-lg flex justify-between items-center py-4 shadow px-4 sm:px-12 lg:px-24 xl:px-40 ${
         theme === "light"
           ? "bg-white/80 text-black"
-          : "bg-gray-950/90 text-white"
+          : "bg-gray-900/90 text-white"
       }`}
     >
       <h2 className="text-2xl tracking-wider font-bold flex items-center bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
