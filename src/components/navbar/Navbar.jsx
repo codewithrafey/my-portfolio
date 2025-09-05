@@ -37,30 +37,35 @@ function Navbar() {
           <IoClose />
         </div>
         <li
-          className="cursor-pointer border-b-2 border-transparent hover:border-blue-500 
+        onClick={() => setOpenMenu(false)}
+         className="cursor-pointer border-b-2 border-transparent hover:border-blue-500 
   hover:text-blue-500"
         >
          <a href="#">Home</a> 
         </li>
         <li
+        onClick={() => setOpenMenu(false)}
           className="cursor-pointer border-b-2 border-transparent hover:border-blue-500 
   hover:text-blue-500"
         >
          <a href="#about">About</a> 
         </li>
         <li
+        onClick={() => setOpenMenu(false)}
           className="cursor-pointer border-b-2 border-transparent hover:border-blue-500 
   hover:text-blue-500"
         >
          <a href="#skills">Skills</a> 
         </li>
         <li
+        onClick={() => setOpenMenu(false)}
           className="cursor-pointer border-b-2 border-transparent hover:border-blue-500 
   hover:text-blue-500"
         >
           <a href="#work">My Work</a>
         </li>
         <li
+        onClick={() => setOpenMenu(false)}
           className="cursor-pointer border-b-2 border-transparent hover:border-blue-500 
   hover:text-blue-500"
         >

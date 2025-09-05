@@ -76,7 +76,7 @@ function Work() {
           my portfolio
         </p>
         <h1 className="text-4xl font-bold">My Latest Work</h1>
-        <div className="mx-auto w-24 h-1 bg-gradient-to-r from-blue-500 to-blue-500 rounded-full"></div>
+        <div className="mx-auto w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
       </div>
 
       {/* Projects Grid */}
