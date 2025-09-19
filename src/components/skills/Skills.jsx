@@ -20,8 +20,7 @@ function Skills() {
     
   return (
     <div
-    id="skills"
-     className="pt-10 pb-20 px-4 sm:px-12 lg:px-24 xl:px-40">
+     className="pt-10 pb-20">
       {/* Section Header */}
       <div className="text-center space-y-2 py-6">
         <p className="text-sm uppercase tracking-widest font-medium text-gray-500">
@@ -36,8 +35,8 @@ function Skills() {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className={`px-7 py-8 rounded-xl shadow-lg hover:shadow-xl border transition ${
-                theme === "light" ? "border-gray-200" : "border-gray-700 bg-gray-900"
+            className={`px-7 py-8 rounded-xl backdrop-blur-3xl shadow-md hover:shadow-[0_0_25px_rgba(59,130,246,0.6)] hover:scale-105 transition-transform duration-300 ${
+                theme === "light" ? "" : "bg-white/5"
               }`}
           >
             <div className="flex gap-3 items-center mb-4">

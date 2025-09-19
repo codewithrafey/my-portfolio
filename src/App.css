@@ -1,1 +1,72 @@
 @import "tailwindcss";
+@layer utilities {
+  @keyframes shine {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+
+  .animate-shine {
+    animation: shine 5s linear infinite;
+  }
+}
+
+/* translate utility ki jagah direct class bana lo */
+.translate-101 {
+  transform: translateY(101%);
+}
+
+/* marquee keyframes */
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* marquee animation */
+.animate-marquee {
+  animation: marquee 15s linear infinite;
+}
+
+.gooey-particle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: float 6s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.2);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes logoLoop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% / 2));
+  }
+}
+.animate-logo-loop {
+  display: flex;
+  width: max-content;
+  animation: logoLoop var(--speed) linear infinite;
+  animation-direction: var(--direction);
+}
+.animate-logo-loop:hover {
+  animation-play-state: paused;
+}

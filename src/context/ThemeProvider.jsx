@@ -5,7 +5,7 @@ export const ThemeContext = createContext(null);
 function ThemeProvider({ children }) {
   // pehle localStorage se theme nikaal lo (agar ho to)
   const [theme, setTheme] = useState(() => {
-    return localStorage.getItem("theme") || "light";
+    return localStorage.getItem("theme") || "dark";
   });
 
   // jab bhi theme change ho, localStorage update karo
