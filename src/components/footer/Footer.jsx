@@ -96,7 +96,7 @@ function Footer() {
             </a>
             <a
               target="_blank"
-              href="https://wa.me/923120281155?text=Hi%20there!%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project."
+              href="mailto:rafeyshaikh57@gmail.com"
               className={`p-3 rounded-full hover:scale-110 transition duration-700 ${
                 isLight
                   ? "bg-gray-200 hover:text-green-600"
@@ -107,7 +107,7 @@ function Footer() {
             </a>
             <a
               target="_blank"
-              href="mailto:rafeyshaikh57@gmail.com"
+              href="https://wa.me/923120281155?text=Hi%20there!%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project."
               className={`p-3 rounded-full hover:scale-110 transition duration-700 ${
                 isLight
                   ? "bg-gray-200 hover:text-green-600"
