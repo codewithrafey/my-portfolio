@@ -158,8 +158,8 @@ function Hero() {
 
   return (
     <div className="">
-      <div className="px-6 sm:px-12 lg:px-24 xl:px-40 py-18">
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center">
+      <div className="px-6 sm:px-12 lg:px-24 xl:px-40 sm:py-18 min-h-screen flex flex-col justify-center items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center ">
           {/* 🔹 Left Side → Intro Content */}
           <div className="flex flex-col justify-center items-center md:items-start text-center md:text-left">
             <p className="text-sm uppercase tracking-widest font-semibold">
@@ -187,7 +187,7 @@ function Hero() {
             <div className="flex gap-4 pt-8">
               {/* Contact Button */}
                 <Link to="/contact">
-              <button className="px-8 py-3 text-sm font-semibold text-white rounded-full bg-gradient-to-r from-blue-500 to-purple-500 shadow-md hover:-translate-y-1 transition-transform cursor-pointer">
+              <button className="px-6 max-sm-w-4 py-3 text-sm font-semibold text-white rounded-full bg-gradient-to-r from-blue-500 to-purple-500 shadow-md hover:-translate-y-1 transition-transform cursor-pointer">
                 Contact me
               </button>
                 </Link>
@@ -200,7 +200,7 @@ function Hero() {
                   href={CV}
                 >
               <button
-                className={`px-6 py-1 flex justify-center items-center gap-2 text-sm shadow-md font-semibold rounded-full hover:-translate-y-1 transition-transform cursor-pointer border ${
+                className={`px-6 max-sm-px-4 py-1 flex justify-center items-center gap-0 text-sm  shadow-md font-semibold rounded-full hover:-translate-y-1 transition-transform cursor-pointer border ${
                   theme === "dark"
                     ? "border-gray-400"
                     : "border border-gray-200"
@@ -209,8 +209,7 @@ function Hero() {
 
                   <Download
                     stroke={theme === "light" ? "#000000" : "#ffffff"}
-                    width={20}
-                    height={20}
+                    className="w-5 h-5"
                   />
                   Download CV
               </button>
@@ -218,29 +217,21 @@ function Hero() {
             </div>
           </div>
 
-          {/* 🔹 Right Side → 3D Spline Model */}
-          <div className="relative w-full h-[500px]">
-            <iframe
-              src="https://my.spline.design/greetingrobotinbluecolor-f9FgwjGIqiTFp3Z3hjPwNDP1/"
-              frameBorder="0"
-              width="100%"
-              height="100%"
-            ></iframe>
-
-            {/* Overlay to hide watermark */}
-            <div
-              className={`absolute bottom-4 right-4 w-40 h-10 ${
-                theme === "light" ? "bg-white" : "bg-black"
-              } `}
-            ></div>
-          </div>
+<div className="relative w-full h-[500px] sm:flex justify-center items-center overflow-hidden hidden">
+<iframe src='https://my.spline.design/genkubgreetingrobot-Qh1gqd6tGPjR9iTboxuBimDz/' frameborder='0' width='100%' height='100%'></iframe>
+  <div
+    className={`absolute bottom-4 right-4 w-40 h-10 ${
+      theme === "light" ? "bg-white" : "bg-black"
+    }`}
+  ></div>
+</div>
         </div>
 
+      </div>
         {/* 🔹 Achievements */}
-        <div className="flex flex-col justify-center items-center gap-8 mt-20">
+        <div className="flex flex-col justify-center items-center gap-8 px-6 sm:px-12 lg:px-24 xl:px-40">
           <Achievements />
         </div>
-      </div>
 
       {/* 🔹 Logo Loop */}
       <div className="py-24 w-full">
@@ -253,7 +244,7 @@ function Hero() {
       </div>
 
       {/* flowing menu */}
-      <div className="w-full py-16">
+      <div className="w-full py-16 sm:block hidden">
         <FlowingMenu
           items={[
             { link: "/", text: "Home", image: "https://picsum.photos/200" },

@@ -41,6 +41,7 @@ function Navbar() {
       <h2 className="text-2xl tracking-wider font-bold flex items-center bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
         {"<Rafey/>"}
       </h2>
+      
       <ul
         className={`flex gap-4 sm:gap-0 max-sm:fixed max-sm:flex-col text-md sm:text-sm font-medium ${
           theme === "light"
@@ -49,8 +50,8 @@ function Navbar() {
         } ${
           !openMenu
             ? "max-sm:w-0 overflow-hidden"
-            : "max-sm:w-60 max-sm:pl-10 max-sm:z-50"
-        } max-sm:font-semibold max-sm:pt-20 top-0 bottom-0 right-0 max-sm:min-h-screen transition-all`}
+            : "max-sm:w-60 max-sm:px-5 max-sm:z-50"
+        } max-sm:font-semibold max-sm:pt-20 -top-3 bottom-0 -right-4 max-sm:min-h-screen transition-all`}
       >
         <div
           onClick={() => setOpenMenu(false)}
@@ -61,7 +62,7 @@ function Navbar() {
         <Link to={"/"}>
         <li
           onClick={() => setOpenMenu(false)}
-          className={`cursor-pointer px-4 py-2 rounded flex gap-2 justify-center items-center ${pathname === '/' ? 'bg-gray-500/20' : ''}`}
+          className={`cursor-pointer px-4 py-2 rounded flex gap-2 justify-center items-center ${pathname === '/' ? 'bg-gray-500/20 sm-border-l-2 border-white' : ''}`}
         >
           <FiHome/>
           Home
